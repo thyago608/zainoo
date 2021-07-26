@@ -22,7 +22,10 @@ export const GlobalStyles = createGlobalStyle`
         list-style:none;
     }
 
-
+    img{
+        width: 100%;
+        height: 100%;
+    }
     html{
         @media(max-width: 800px){
             font-size: 87.5%;  //14px
