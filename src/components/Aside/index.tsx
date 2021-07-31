@@ -1,4 +1,4 @@
-import { Container, Navigation } from "./styles";
+import { Container, Navigation, Box } from "./styles";
 
 export function Aside() {
   return (
@@ -11,14 +11,25 @@ export function Aside() {
           <li>
             <a>Bags</a>
           </li>
-          <li>
+          <li className="new">
             <a>Accessories</a>
+            <span>New</span>
           </li>
           <li>
             <a>Suport</a>
           </li>
         </ul>
       </Navigation>
+      <Box>
+        <h1>
+          <span className="colorize">Extra Care</span>
+          <span>Foot Tech</span>
+        </h1>
+
+        <span className="more">learn more</span>
+
+        <span className="scrolldown">Scroll down</span>
+      </Box>
     </Container>
   );
 }

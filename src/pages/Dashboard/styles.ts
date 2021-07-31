@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.main`
+  max-width: 1420px;
+  margin: 0 auto;
 
-export const Header = styled.header``;
+  display: flex;
+`;
 
-export const Main = styled.main``;
-
-export const Aside = styled.aside``;
-
+export const Content = styled.div`
+  flex: 3;
+`;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -13,6 +13,11 @@ export const GlobalStyles = createGlobalStyle`
         --gray-light:#E9E9E9;
     }
 
+    body{
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+    }
+    
     a{
         text-decoration: none;
         color: inherit;
@@ -35,4 +40,3 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 `;
-
