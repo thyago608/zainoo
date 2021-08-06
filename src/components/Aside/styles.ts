@@ -19,20 +19,32 @@ export const Navigation = styled.nav`
     flex-direction: column;
     justify-content: space-evenly;
 
-    li.new {
+    li.new{
       position: relative;
+    }
 
-      span {
-        border-radius: 1rem;
-        background: var(--gray-light);
-        color: gray;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.4rem;
+    li.new::after {
+      content: "New";
+      position: absolute;
+      top: 5px;
+      right: 40px;
 
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        z-index: -1;
+      border-radius: 1rem;
+      background: var(--gray-light);
+      color: gray;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.4rem;
+
+      @media(max-width: 1000px){
+        opacity: 0;
+      }
+
+      @media(min-width:1100px){
+        right: 55px;
+      }
+
+      @media(min-width:1200px){
+        right: 70px;
       }
     }
 
@@ -108,3 +120,6 @@ export const Box = styled.section`
     font-size: 0.7rem;
   }
 `;
+  /* span {
+
+      } */

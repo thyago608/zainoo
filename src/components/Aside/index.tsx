@@ -13,7 +13,6 @@ export function Aside() {
           </li>
           <li className="new">
             <a>Accessories</a>
-            <span>New</span>
           </li>
           <li>
             <a>Suport</a>

@@ -1,16 +1,64 @@
 import { Header } from "../../components/Header";
 import { Aside } from "../../components/Aside";
 import { Button } from "../../components/Button";
-import { Container, Content } from "./styles";
+import hero from '../../assets/images/banner-tennis.svg';
+import bagIcon from '../../assets/images/shopping-bag.svg';
+import playIcon from '../../assets/images/play.svg';
+
+import { Container, Content, RightSide } from "./styles";
 
 export function Dashboard() {
-  return (
+
+    const buttonAddToCart = {
+        title: 'Add To Cart',
+        icon: bagIcon,
+        colors:{
+            colorText:'white',
+            colorBackground:'black',
+        }
+    }
+    
+    const buttonWatchIntro = {
+        title: 'Watch intro',
+        icon: playIcon,
+    }
+    
+    return (
     <>
-      <Header />
-      <Container>
-        <Aside />
-        <Content></Content>
-      </Container>
+        <Header />
+        <Container>
+            <Aside />
+            <Content>
+                <section>
+                    <header>
+                        <h1>The best looks; Top Comfort</h1>
+                    </header>
+                    <h2>Comfy Maxer®</h2>
+                    <p>Our shoes fuse together an insole that cushions every move, 
+                       laces that you’ll never need to tie again, and an odor-fighting copper thread lining.
+                    </p>
+
+                    <div className="container-buttons">
+                        <Button data={buttonAddToCart}/>
+                        <Button data={buttonWatchIntro}/>
+                    </div>
+                </section>
+                <div className="hero">
+                    <img src={hero} alt="banner"/>
+                </div>
+            </Content>
+            <RightSide>
+                <div className="social">
+                    <span>fb</span>
+                    <span>tw</span>
+                    <span>in</span>
+                </div>
+                <div className="description">
+
+                </div>
+
+            </RightSide>
+        </Container>
     </>
   );
 }
