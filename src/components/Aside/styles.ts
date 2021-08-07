@@ -7,6 +7,10 @@ export const Container = styled.aside`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -19,7 +23,7 @@ export const Navigation = styled.nav`
     flex-direction: column;
     justify-content: space-evenly;
 
-    li.new{
+    li.new {
       position: relative;
     }
 
@@ -35,15 +39,15 @@ export const Navigation = styled.nav`
       font-size: 0.75rem;
       padding: 0.2rem 0.4rem;
 
-      @media(max-width: 1000px){
+      @media (max-width: 1000px) {
         opacity: 0;
       }
 
-      @media(min-width:1100px){
-        right: 55px;
+      @media (min-width: 1100px) {
+        right: 50px;
       }
 
-      @media(min-width:1200px){
+      @media (min-width: 1200px) {
         right: 70px;
       }
     }
@@ -99,9 +103,9 @@ export const Box = styled.section`
   .more {
     font-weight: 400;
     font-size: 0.8rem;
-    text-align: right;
     position: relative;
     margin-right: 1rem;
+    text-align: right;
 
     &::before {
       content: "";
@@ -113,6 +117,16 @@ export const Box = styled.section`
       top: 10px;
       left: 0;
     }
+
+    @media (max-width: 900px) {
+      & {
+        text-align: left;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .scrolldown {
@@ -120,6 +134,6 @@ export const Box = styled.section`
     font-size: 0.7rem;
   }
 `;
-  /* span {
+/* span {
 
       } */

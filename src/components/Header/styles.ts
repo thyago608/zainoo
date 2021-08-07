@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  max-width: 1420px;
+  max-width: 1340px;
   height: 5rem;
 
   margin: 0 auto;
@@ -13,6 +13,12 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: 1280px) {
+      .container-image {
+        padding-left: 2.7rem;
+      }
+    }
   }
 `;
 
