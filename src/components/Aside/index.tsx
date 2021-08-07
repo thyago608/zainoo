@@ -6,16 +6,16 @@ export function Aside() {
       <Navigation>
         <ul>
           <li>
-            <a>Shoes</a>
+            <a href="http://github.com/thyago608">Shoes</a>
           </li>
           <li>
-            <a>Bags</a>
+            <a href="http://github.com/thyago608">Bags</a>
           </li>
           <li className="new">
-            <a>Accessories</a>
+            <a href="http://github.com/thyago608">Accessories</a>
           </li>
           <li>
-            <a>Suport</a>
+            <a href="http://github.com/thyago608">Suport</a>
           </li>
         </ul>
       </Navigation>

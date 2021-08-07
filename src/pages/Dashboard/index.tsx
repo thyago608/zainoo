@@ -54,9 +54,10 @@ export function Dashboard() {
                     <span>in</span>
                 </div>
                 <div className="description">
-
+                    <span>manufacturing</span>
+                    <span>packaging</span>
+                    <span>team</span>
                 </div>
-
             </RightSide>
         </Container>
     </>

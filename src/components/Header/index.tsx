@@ -12,17 +12,17 @@ export function Header() {
         <Navigation>
           <ul>
             <li>
-              <a href="">
+              <a href="http://github.com/thyago608">
                 <FiSearch />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="http://github.com/thyago608">
                 <FiShoppingBag />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="http://github.com/thyago608">
                 <FiUser />
               </a>
             </li>

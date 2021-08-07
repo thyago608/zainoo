@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import img from '../../assets/images/banner-tennis.svg';
 
 export const Container = styled.main`
   max-width: 1420px;
   margin: 0 auto;
 
   display: flex;
+  position: relative;
+
+  border: 1px solid tomato;
+
 `;
 
 export const Content = styled.div`
@@ -61,4 +64,26 @@ export const Content = styled.div`
         opacity: 0;
       }
   }
+`;
+
+
+export const RightSide = styled.div`
+
+  max-width: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .social{
+
+    border: 1px solid black;
+  }
+
+  .description{
+  
+
+  }
+
 `;
