@@ -21,6 +21,9 @@ export const Content = styled.div`
     justify-content: center;
     padding-top: 1rem;
 
+    position: relative;
+    z-index: 99999;
+
     h1 {
       color: #95a5a6;
       font: 300 1rem "Poppins";
@@ -52,13 +55,27 @@ export const Content = styled.div`
     height: 500px;
 
     position: absolute;
-    bottom: 0;
-    left: 100px;
+    bottom: -20px;
+    left: 150px;
     z-index: -1;
 
     @media (max-width: 900px) {
       display: none;
     }
+  }
+
+  .nine-four {
+    font: 700 17rem "Poppins";
+
+    position: absolute;
+    top: 0px;
+    left: 420px;
+
+    background-image: linear-gradient(#ffb8b8, #ffcccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(1.22);
   }
 
   @media (min-width: 400px) and (max-width: 900px) {

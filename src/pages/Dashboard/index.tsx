@@ -50,6 +50,8 @@ export function Dashboard() {
             <div className="hero">
               <img src={hero} alt="banner" />
             </div>
+
+            <div className="nine-four">94</div>
           </Zoom>
         </Content>
         <RightSide>
