@@ -1,13 +1,10 @@
 import { Header } from "../../components/Header";
 import { Aside } from "../../components/Aside";
 import { Button } from "../../components/Button";
-import hero from "../../assets/images/banner-tennis.svg";
 import bagIcon from "../../assets/images/shopping-bag.svg";
 import playIcon from "../../assets/images/play.svg";
 
 import { Container, Content, RightSide } from "./styles";
-
-const Zoom = require("react-reveal/Zoom");
 
 export function Dashboard() {
   const buttonAddToCart = {
@@ -46,13 +43,8 @@ export function Dashboard() {
               <Button data={buttonWatchIntro} />
             </div>
           </section>
-          <Zoom>
-            <div className="hero">
-              <img src={hero} alt="banner" />
-            </div>
 
-            <div className="nine-four">94</div>
-          </Zoom>
+          <div className="nine-four">94</div>
         </Content>
         <RightSide>
           <div className="description">

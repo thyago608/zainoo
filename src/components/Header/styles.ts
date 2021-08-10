@@ -6,6 +6,11 @@ export const Container = styled.header`
 
   margin: 0 auto;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
   .wrapper {
     height: 100%;
     padding: 0 1rem;

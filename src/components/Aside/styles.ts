@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.aside`
-  max-width: 250px;
-  height: calc(100vh - 5rem);
-  padding: 0 1rem;
+  max-width: 200px;
+  padding: 5rem 1rem 0;
 
   display: flex;
   flex-direction: column;
+
+  border-right: 1px solid var(--gray-light);
 
   @media (max-width: 900px) {
     display: none;
@@ -31,7 +32,7 @@ export const Navigation = styled.nav`
       content: "New";
       position: absolute;
       top: 5px;
-      right: 40px;
+      right: 10px;
 
       border-radius: 1rem;
       background: var(--gray-light);
@@ -41,14 +42,6 @@ export const Navigation = styled.nav`
 
       @media (max-width: 1000px) {
         opacity: 0;
-      }
-
-      @media (min-width: 1100px) {
-        right: 50px;
-      }
-
-      @media (min-width: 1200px) {
-        right: 70px;
       }
     }
 

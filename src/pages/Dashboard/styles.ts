@@ -1,25 +1,34 @@
 import styled from "styled-components";
+import img from "../../assets/images/banner-tennis.svg";
 
 export const Container = styled.main`
   max-width: 1240px;
+  height: 100vh;
+
   margin: 0 auto;
 
   display: flex;
-  position: relative;
 `;
 
 export const Content = styled.div`
   width: 1080px;
+
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center bottom;
+
   position: relative;
 
   > section {
+    margin-top: 7rem;
     max-width: 525px;
     height: 320px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1rem;
+    padding: 2rem;
 
     position: relative;
     z-index: 99999;
@@ -51,40 +60,66 @@ export const Content = styled.div`
     }
   }
 
-  .hero {
-    height: 500px;
-
-    position: absolute;
-    bottom: -20px;
-    left: 150px;
-    z-index: -1;
-
-    @media (max-width: 900px) {
-      display: none;
-    }
-  }
-
   .nine-four {
     font: 700 17rem "Poppins";
 
     position: absolute;
-    top: 0px;
-    left: 420px;
-
-    background-image: linear-gradient(#ffb8b8, #ffcccc);
+    top: 60px;
+    left: 425px;
+    background-image: linear-gradient(#ffe6e6, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    filter: brightness(1.22);
+
+    letter-spacing: 10px;
   }
 
-  @media (min-width: 400px) and (max-width: 900px) {
+  @media (min-width: 300px) and (max-width: 900px) {
+    & {
+      background-image: none;
+    }
+
     > section {
       align-items: center;
 
-      width: 400px;
+      width: 25rem;
       margin: 4rem auto;
     }
+  }
+
+  @media (max-width: 1300px) {
+    .nine-four {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 100vh;
+
+    border-right: 1px solid rgba(100, 100, 100, 0.1);
+
+    position: absolute;
+    top: 0;
+    left: 182px;
+  }
+
+  &::before {
+    content: "";
+    width: 220px;
+    height: 100vh;
+
+    border-left: 1px solid rgba(100, 100, 100, 0.1);
+    border-right: 1px solid rgba(100, 100, 100, 0.1);
+
+    position: absolute;
+    top: 0;
+    left: 390px;
   }
 `;
 
@@ -113,7 +148,7 @@ export const RightSide = styled.div`
     transform-origin: top left;
 
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 0px;
 
     display: flex;
@@ -123,5 +158,9 @@ export const RightSide = styled.div`
   .description,
   .social {
     font: 700 0.8rem "Poppins";
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 `;
