@@ -2,7 +2,7 @@
 
 ## Sobre
 
-A página **zainoo**, é uma dashboard tirada da plataforma **Dribbble*. A mesma foi utilizada apenas para realizar a prática de html, css, e javascript utilizando a tecnologia React.
+A página **zainoo**, é uma dashboard tirada da plataforma **Dribbble**. A mesma foi utilizada apenas para realizar a prática de html, css, e javascript utilizando a tecnologia React.
 
 ---
 
